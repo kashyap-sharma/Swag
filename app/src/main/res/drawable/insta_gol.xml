@@ -1,0 +1,9 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/golez"
+       android:id="@+id/rounded_corners"/>
+    <item android:drawable="@drawable/instagram" android:id="@+id/additional_image"
+        android:height="30dp"
+        android:gravity="center"
+        android:width="30dp"
+        />
+</layer-list>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "62891304776",
+    "project_id": "soswag-1341"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62891304776:android:cf4b071962a6dbb3",
+        "android_client_info": {
+          "package_name": "jlabs.soswagger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62891304776-fq1n28pfdfm8eop8uene4asagno7i94q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jlabs.soswagger",
+            "certificate_hash": "D0FB481EA4FA895EF9A8C66B9DDBDEB9ACC8E2CC"
+          }
+        },
+        {
+          "client_id": "62891304776-glltqgmdjrn0as2r4md9de40f00lq9sl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7LjpgI7HCTwz1ITH4ldxdxhq7qpwlQpM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

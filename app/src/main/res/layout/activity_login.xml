@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jlabs.soswagger.StarView.StarActivity
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+  >
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+
+        android:padding="20dp"
+        android:id="@+id/one"
+        android:src="@drawable/logo" />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:id="@+id/hipster"
+        android:padding="20dp"
+        android:layout_below="@+id/one"
+        android:src="@drawable/cross" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:hint="Username/email ID"
+            android:padding="10dp"
+            android:textColorHint="@android:color/white"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/editext"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="7dp"
+            android:hint="Password"
+            android:padding="10dp"
+            android:textColorHint="@android:color/white"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/editext"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+      android:paddingTop="30dp"
+        android:id="@+id/social"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/lo"
+            android:textSize="18sp"
+            android:textColor="#FDF300"
+            android:text="LOG IN"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/lo"
+            android:paddingTop="7dp"
+            android:orientation="horizontal">
+
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                    android:layout_width="50dp"
+                    app:materialIcon="facebook"
+                    app:materialIconColor="#000"
+                    app:materialIconSize="24dp"
+                    android:id="@+id/fb_login"
+                    android:layout_margin="5dp"
+                    android:scaleType="center"
+                    android:background="@drawable/gol"
+                    android:layout_height="50dp" />
+            <com.facebook.login.widget.LoginButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:id="@+id/loginButton" />
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                android:layout_width="50dp"
+                app:materialIcon="google"
+                app:materialIconColor="#000"
+                android:id="@+id/gplus_login"
+                app:materialIconSize="24dp"
+                android:layout_margin="5dp"
+                android:scaleType="center"
+                android:background="@drawable/gol"
+                android:layout_height="50dp" />
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                android:layout_width="50dp"
+                app:materialIcon="instagram"
+                android:id="@+id/insta_login"
+                app:materialIconColor="#000"
+                app:materialIconSize="24dp"
+                android:layout_margin="5dp"
+                android:scaleType="center"
+                android:background="@drawable/gol"
+                android:layout_height="50dp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/bo_text"
+        android:layout_height="wrap_content"
+        android:text="Over 150 brands waiting for you..."
+        android:textStyle="italic"
+        android:textColor="#FAED33"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="bottom"
+        />
+
+
+</FrameLayout>
