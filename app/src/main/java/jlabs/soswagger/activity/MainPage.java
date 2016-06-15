@@ -50,14 +50,14 @@ public class MainPage extends AppCompatActivity {
         pics = intent.getStringExtra("images");
         occupation = intent.getStringExtra("posi");
 
-        Picasso.with(context)
-                .load(pics)
-                .resize(80, 80)
-                .centerCrop()
-                .into(photo);
-
-        occu.setText(occupation);
-        name.setText(firstname+" "+lastname);
+//        Picasso.with(context)
+//                .load(pics)
+//                .resize(80, 80)
+//                .centerCrop()
+//                .into(photo);
+//
+//        occu.setText(occupation);
+//        name.setText(firstname+" "+lastname);
 
         nav.setOnClickListener(new View.OnClickListener() {
             @Override
