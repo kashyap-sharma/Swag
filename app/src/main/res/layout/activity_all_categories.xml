@@ -142,6 +142,7 @@
                android:src="@drawable/shoppingcart"
               android:scaleType="centerInside"
                android:padding="10dp"
+               android:id="@+id/shop_cart"
                android:layout_margin="20dp"
                android:background="@drawable/cat_but"/>
             <ImageButton
@@ -150,6 +151,7 @@
                 android:src="@drawable/phone"
                 android:scaleType="centerInside"
                 android:padding="10dp"
+                android:id="@+id/phone"
                 android:background="@drawable/cat_but"
                 android:layout_marginTop="20dp"
                 android:layout_height="74dp">
@@ -159,6 +161,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_width="74dp"
                 android:layout_margin="20dp"
+                android:id="@+id/build"
                 android:src="@drawable/building"
                 android:scaleType="centerInside"
                 android:padding="10dp"
@@ -182,6 +185,7 @@
                 android:layout_height="74dp"
                 android:layout_marginLeft="20dp"
                 android:src="@drawable/diamond"
+                android:id="@+id/diamond"
                 android:scaleType="centerInside"
                 android:padding="10dp"
                 android:layout_marginRight="20dp"
@@ -192,6 +196,7 @@
                 android:layout_centerInParent="true"
                 android:background="@drawable/cat_but"
                 android:src="@drawable/burger"
+                android:id="@+id/burger"
                 android:scaleType="centerInside"
                 android:padding="10dp"
                 android:layout_centerVertical="true"
@@ -204,6 +209,7 @@
                 android:layout_marginLeft="20dp"
                 android:src="@drawable/drink"
                 android:scaleType="centerInside"
+                android:id="@+id/drink"
                 android:padding="10dp"
                 android:layout_marginRight="20dp"
 
@@ -220,6 +226,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/bt1_pan1"
             android:gravity="center_horizontal"
+            android:id="@+id/bt1_pan2"
 
             >
             <ImageButton
@@ -227,6 +234,7 @@
                 android:src="@drawable/video_cam"
                 android:scaleType="centerInside"
                 android:padding="10dp"
+                android:id="@+id/video"
                 android:layout_height="74dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
@@ -238,6 +246,7 @@
                 android:src="@drawable/flight"
                 android:scaleType="centerInside"
                 android:padding="10dp"
+                android:id="@+id/flight"
                 android:layout_centerInParent="true"
                 android:background="@drawable/cat_but"
                 android:layout_height="74dp">
@@ -250,6 +259,7 @@
                 android:layout_marginTop="20dp"
                 android:src="@drawable/cab"
                 android:scaleType="centerInside"
+                android:id="@+id/cab"
                 android:padding="10dp"
                 android:layout_marginRight="20dp"
                 android:background="@drawable/cat_but"

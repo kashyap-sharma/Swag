@@ -19,6 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Kashyap Sharma"
+            android:id="@+id/userme"
             android:layout_gravity="center_vertical"
             android:textColor="#000000"/>
     </LinearLayout>
@@ -55,6 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/all_cat"
+        android:background="#fefefe"
         android:orientation="horizontal">
         <ImageView
             android:layout_width="30dp"
@@ -78,6 +80,8 @@
         android:background="#D9DADB"/>
     <LinearLayout
         android:layout_width="match_parent"
+        android:id="@+id/my_brands"
+        android:background="#fefefe"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <ImageView

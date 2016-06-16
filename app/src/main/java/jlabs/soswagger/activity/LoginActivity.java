@@ -23,6 +23,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.StaticLayout;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
@@ -81,6 +82,7 @@ import java.util.List;
 import java.util.Set;
 
 import jlabs.soswagger.R;
+import jlabs.soswagger.customCompo.Static_Catelog;
 
 public class LoginActivity extends FragmentActivity {
     Activity context1;
@@ -190,24 +192,36 @@ public class LoginActivity extends FragmentActivity {
 
 
 
+        String name=Static_Catelog.getStringProperty(context,"checkin");
+        Log.e("MyName",""+name);
+        if(name==null){
+            final Animation hippo = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+            // final Intent myIntent = new Intent(this, MainPage.class);
+            new Handler().postDelayed(new Runnable() {
 
+                @Override
+                public void run() {
+                    hip.setVisibility(View.GONE);
+                    ll.setVisibility(View.VISIBLE);
+                    ll.startAnimation(hippo);
+                    rl.setVisibility(View.VISIBLE);
+                    rl.startAnimation(hippo);
+                }
+            }, splash_time);
+        }
+        else{
 
-        final Animation hippo = AnimationUtils.loadAnimation(this, R.anim.fade_in);
-       // final Intent myIntent = new Intent(this, MainPage.class);
-        new Handler().postDelayed(new Runnable() {
+            new Handler().postDelayed(new Runnable() {
 
-            @Override
-            public void run() {
-                hip.setVisibility(View.GONE);
-                ll.setVisibility(View.VISIBLE);
-                ll.startAnimation(hippo);
-                rl.setVisibility(View.VISIBLE);
+                @Override
+                public void run() {
+                    Intent i = new Intent(context, MainPage.class);
+                    startActivity(i);
+                }
+            }, splash_time);
 
-                rl.startAnimation(hippo);
+        }
 
-
-            }
-        }, splash_time);
 
 
 
@@ -711,11 +725,15 @@ public class LoginActivity extends FragmentActivity {
 
     private void SendFbData() {
         Intent intent = new Intent(getApplication(), MainPage.class);
-        intent.putExtra("email", email);
-        intent.putExtra("fname", first_name);
-        intent.putExtra("lname", last_name);
-        intent.putExtra("posi", pos_name);
-        intent.putExtra("images",profilePicUrl);
+//        intent.putExtra("email", email);
+//        intent.putExtra("fname", first_name);
+//        intent.putExtra("lname", last_name);
+        Static_Catelog.setStringProperty(context, "ema", email);
+        Static_Catelog.setStringProperty(context, "checkin", first_name);
+        Static_Catelog.setStringProperty(context,"las",last_name);
+        Static_Catelog.setStringProperty(context,"pica",profilePicUrl);
+//        intent.putExtra("posi", pos_name);
+//        intent.putExtra("images",profilePicUrl);
         startActivity(intent);
         finish();
     }

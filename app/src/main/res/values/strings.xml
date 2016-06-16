@@ -11,4 +11,7 @@
     <string name="cancelled">Cancelled</string>
     <string name="ok">OK</string>
     <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="title_activity_all_cat__child">AllCat_Child</string>
+    <string name="title_activity_followed_brands">FollowedBrands</string>
+    <string name="title_activity_deal_page">DealPage</string>
 </resources>

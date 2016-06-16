@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jlabs.soswagger.StarView.StarActivity
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center_horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/actionbar"
+            android:layout_height="56dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/bar"
+                android:paddingTop="15dp"
+                android:paddingLeft="-10dp"
+                android:id="@+id/nav"
+                android:paddingBottom="15dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/letter"
+                android:padding="13dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/drop"
+                android:id="@+id/drop"
+                android:padding="15dp"
+                android:paddingRight="-7dp"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userbar"
+            android:gravity="center_vertical"
+            >
+            <FrameLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_gravity="center"
+                    android:layout_height="64dp"
+                    android:background="@drawable/gol2"/>
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_gravity="center"
+                    android:layout_height="60dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/gol1"/>
+
+                <jlabs.soswagger.Rounded.RoundedImageView
+                    android:layout_width="56dp"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/photo"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/view"
+                    android:layout_height="56dp" />
+            </FrameLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/name"
+                    android:text="Kashyap Sharma"
+                    android:textSize="12sp"
+                    android:textColor="#455F97"
+                    android:paddingTop="3dp"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/user"
+                    android:paddingRight="10dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/occu"
+                    android:text="Application Developer"
+                    android:textSize="10sp"
+                    android:layout_below="@+id/user"
+                    android:textColor="#fff"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="10dp"
+
+                    android:paddingRight="10dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:textColor="#FDF300"
+                android:layout_alignParentRight="true"
+                android:text="42"
+                android:layout_marginRight="15dp"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:background="@drawable/golbutton"
+                />
+
+        </RelativeLayout>
+
+        <include android:layout_below="@+id/userbar"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:id="@+id/frst"
+            android:layout_height="wrap_content" layout="@layout/test_gap"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Live Feed"
+            android:layout_below="@+id/frst"
+            android:id="@+id/live_feed"
+            android:gravity="center"
+            android:background="@drawable/view_more"
+            android:textColor="#000000"
+            android:paddingLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="14sp"
+            android:paddingRight="40dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+
+
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                android:layout_width="50dp"
+                app:materialIcon="facebook"
+                app:materialIconColor="#000"
+                app:materialIconSize="24dp"
+
+                android:layout_below="@+id/live_feed"
+                android:id="@+id/fb_login"
+                android:layout_marginLeft="40dp"
+
+                android:scaleType="center"
+                android:background="@drawable/gol"
+                android:layout_height="50dp" />
+
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                android:layout_width="50dp"
+                app:materialIcon="twitter"
+                app:materialIconColor="#000"
+                android:id="@+id/gplus_login"
+                app:materialIconSize="24dp"
+                android:layout_centerHorizontal="true"
+
+                android:layout_below="@+id/live_feed"
+                android:scaleType="center"
+                android:background="@drawable/gol"
+                android:layout_height="50dp" />
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                android:layout_width="50dp"
+                app:materialIcon="instagram"
+                android:id="@+id/insta_login"
+                app:materialIconColor="#000"
+                app:materialIconSize="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:layout_below="@+id/live_feed"
+                android:scaleType="center"
+                android:background="@drawable/gol"
+                android:layout_height="50dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Offers"
+           android:layout_above="@+id/fort"
+            android:id="@+id/offers"
+            android:gravity="center"
+            android:background="@drawable/view_more"
+            android:textColor="#000000"
+            android:paddingLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="14sp"
+            android:paddingRight="40dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+
+
+
+        <Button
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:text="40%\nOFF"
+            android:id="@+id/fort"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_margin="20dp"
+            android:background="@drawable/offer_but"/>
+        <Button
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:text="BUY 1\nGET 1\nFREE"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000"
+            android:layout_margin="20dp"
+            android:background="@drawable/offer_but"/>
+        <Button
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:text="10%\nOFF"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/offer_but"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</FrameLayout>
